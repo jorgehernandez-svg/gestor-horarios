@@ -119,12 +119,6 @@ if archivos_subidos:
             st.dataframe(matriz.style.map(pintar_verde), use_container_width=True, height=500)
             
     else:
-        st.warning("⚠️ No se encontraron marcas 'X' en los archivos subidos. Revisa que sean formato .xlsx")
+        st.warning("⚠️ No se encontraron marcas 'X' en los archivos subidos. Revisa el formato.")
 else:
     st.info("👈 Esperando archivos... Usa el panel de la izquierda.")
-        
-    else:
-        st.warning("Se leyeron los archivos pero no se encontraron marcas 'X'. Revisa el formato.")
-else:
-
-    st.info("👈 Esperando archivos... Arrástralos en el panel de la izquierda.")
